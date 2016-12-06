@@ -15,9 +15,9 @@ fish_prompt -- Write out the prompt
 
 fish_right_prompt -- Write out the right prompt
 
-lh  List contents of directory using long human format
+lh -- List contents of directory using long human format
 
-ll  List contents of directory using long format
+ll -- List contents of directory using long format
 
 mkdircd -- Create a directory and set CWD
 
