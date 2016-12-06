@@ -1,6 +1,8 @@
 # fish-and-chips
 A bunch of fish shell functions and configurations
 
+config.fish -- This is fish config's file executed at start
+
 cdd -- Alias to cd ~/downloads
 cds -- Change to a directory in the history
 ds -- Prints the directory history
