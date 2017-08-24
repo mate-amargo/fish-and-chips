@@ -1,7 +1,7 @@
 #!/usr/bin/fish
 # A simple fish script to install all the goodies
 
-echo 'About to install system-wide files'
+echo -e '\e[32mAbout to install system-wide files\e[0m'
 for file in etc/**
 	if test -d /$file
 		sudo install -v -d -m 755 -o root -g root $file /$file 
@@ -10,7 +10,7 @@ for file in etc/**
 	end
 end
 
-echo 'About to install user files'
+echo -e '\e[32mAbout to install user files\e[0m'
 for file in (string replace local/ "" local/**)
 	if test -d local/$file
 		install -v -d -m 755 -o $USER -g users local/$file $HOME/.config/fish/$file
@@ -20,7 +20,7 @@ for file in (string replace local/ "" local/**)
 end
 
 if test $status = 0
-	echo 'All done wonderfully!'
+	echo -e '\e[32mAll done wonderfully!\e[0m'
 else
-	echo 'Oh-oh. Something went wrong :('
+	echo -e '\e[31mOh-oh. Something went wrong :(\e[0m'
 end
