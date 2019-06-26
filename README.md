@@ -7,10 +7,6 @@ etc/config.fish -- This is fish config's file executed at start
 
 etc/functions:
 
-cds -- Change to a directory in the history
-
-ds -- Prints the directory history
-
 fish_prompt -- Write out the prompt
 
 fish_right_prompt -- Write out the right prompt
