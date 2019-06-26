@@ -1,0 +1,1 @@
+../../fish_logo/functions/fish_logo.fish
