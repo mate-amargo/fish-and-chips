@@ -1,0 +1,3 @@
+[submodule "fish_logo"]
+	path = fish_logo
+	url = https://github.com/laughedelic/fish_logo.git
