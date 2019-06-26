@@ -12,6 +12,3 @@
 # if status --is-interactive
 #   ...
 # end
-
-# Autoload some cool functions
-cds
