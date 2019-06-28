@@ -1,6 +1,9 @@
 #!/usr/bin/fish
 # A simple fish script to install all the goodies
 
+git submodule init
+git submodule update
+
 echo -e '\e[32mAbout to install system-wide files\e[0m'
 for file in etc/**
 	if test -d /$file
