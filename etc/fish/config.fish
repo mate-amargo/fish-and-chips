@@ -12,3 +12,8 @@
 # if status --is-interactive
 #   ...
 # end
+if status --is-interactive
+  abbr --add --global lh "ls -lh"
+  abbr --add --global ll "ls -ll"
+  abbr --add --global lah "ls -lAh"
+end
