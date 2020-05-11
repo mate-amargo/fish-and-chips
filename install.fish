@@ -6,10 +6,10 @@ git submodule update
 
 echo -e '\e[32mAbout to install system-wide files\e[0m'
 for file in etc/**
-	if test -d /$file
-		sudo install -v -d -m 755 -o root -g root $file /$file 
+	if test -d $file
+		sudo install -v -d -m 755 -o root -g root $file /$file
 	else
-		sudo install -v -m 644 -o root -g root $file /$file 
+		sudo install -v -m 644 -o root -g root $file /$file
 	end
 end
 
