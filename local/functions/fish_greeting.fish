@@ -1,5 +1,5 @@
-function fish_greeting -d "Sage cow chess quote OR Fish OR Info OR Doge"
-  switch (shuf -n1 -e (seq 1 5))
+function fish_greeting -d "Sage cow chess quote OR Fish OR Info OR Doge OR Matrix"
+  switch (shuf -n1 -e (seq 1 6))
     case 1
       set -l QUOTE_FILE "$HOME/.local/share/quotes/chess.quotes"
       set -l QUOTE (shuf -n1 $QUOTE_FILE)
@@ -13,5 +13,7 @@ function fish_greeting -d "Sage cow chess quote OR Fish OR Info OR Doge"
       pfetch
     case 5
       doge
+    case 6
+      unimatrix -s 99 -f -w
   end
 end
